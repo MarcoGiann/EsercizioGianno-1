@@ -1,0 +1,10 @@
+.bodySum{
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+    border: 1px solid black;
+}
+.bodySum h6{
+    font-size: large;
+
+}

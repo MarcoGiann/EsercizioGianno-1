@@ -1,0 +1,13 @@
+.todoBody{
+    
+    display: flex;
+    flex-direction: column;
+   background-color: grey;
+   border: solid 1px black;
+}
+
+.pazzo{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}

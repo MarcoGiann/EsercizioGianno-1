@@ -1,0 +1,23 @@
+<div class="bodySum">
+    
+<div class="pollo">
+    <button class="btn btn-secondary">Continua</button>
+
+  <h6>{{ userInf.name }}</h6>
+  <h6>{{ userInf.username }}</h6>
+  <h6>{{ userInf.email }}</h6>
+  <h6>{{ Ress.street }}</h6>
+  <h6>{{ Ress.suite }}</h6>
+  <h6>{{ Ress.city }}</h6>
+  <h6>{{ Ress.zipcode }}</h6>
+  <h6>{{ userInf.phone }}</h6>
+    
+    <h4> Cose Da Fare</h4>
+  <div *ngFor="let us of toDoCheck">
+    <h6 *ngIf="!us.completed">
+        
+        {{ us.title }}</h6>
+    
+  </div>
+</div>
+</div>

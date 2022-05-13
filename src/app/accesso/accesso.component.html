@@ -1,0 +1,49 @@
+
+<div class="loginBody">
+<div class="form-group">
+    <label for="username">Username</label>
+    
+    <input type="text" class="form-control" name="username" [(ngModel)]="username">
+
+  </div>
+  <div class="form-group">
+    <label for="id">ID</label>
+    <input type="text" class="form-control" name="id" [(ngModel)]="login.id">
+  </div>
+  
+   
+  <div *ngIf="loading">loading...</div>
+   
+  <div *ngIf="errorMessage" class="alert alert-warning">
+    <strong>Attenzione</strong> {{errorMessage|json}}
+  </div>
+  
+   
+  
+      
+    </div>
+    <div>  
+      <div class="form-group">
+        <div class="d-flex justify-content-center">
+        <button style="margin-top:10px" type="button" (click)="getData()" class="btn btn-secondary">Get Data</button>
+      </div>
+        <table class='table'>
+          <thead>
+            
+            <tr>
+              <th>ID</th>
+              <th>UserName</th>
+        
+            </tr>
+          </thead>
+          <tbody>
+         
+              <ng-container>
+              <td>{{login.id}}</td>
+              <td>{{username}}</td>
+              
+            </ng-container>
+            </tbody>
+            </table>
+      </div>  
+    

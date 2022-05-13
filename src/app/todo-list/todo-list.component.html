@@ -1,0 +1,10 @@
+<div class="todoBody">
+<button class="btn btn-secondary"  (click)="getTodos()" > Continua </button>
+<!-- (click)="getTodos()" -->
+<div class="pazzo" *ngFor="let todo of userTodos">
+
+  <h6>{{ todo.title }}</h6>
+      <input [disabled]="todo.completed" (change)="select($event)" [value]="toDo.id"  type="checkbox" [checked]="todo.completed">
+</div></div>
+
+
